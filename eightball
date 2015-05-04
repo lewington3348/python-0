@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+import colors as c
+
+
+
+print(c.yellow + '''welcome to the magic eight ball! ''')
+
+answers = ['yes','no','maybe','my sources say no','LEAVE ME ALONE, DERP']
+
+question = input('> '+c.green)
+
+import random
+answer = random.choice(answers)
+print(answer)
+print (c.random_color() + 'random' + reset, end=' ')
